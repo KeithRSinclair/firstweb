@@ -1,0 +1,23 @@
+{
+  "name": "firstweb",
+  "version": "1.0.0",
+  "description": "First Web Site",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d firstweb"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KeithRSinclair/firstweb.git"
+  },
+  "keywords": [],
+  "author": "Keith",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KeithRSinclair/firstweb/issues"
+  },
+  "homepage": "https://github.com/KeithRSinclair/firstweb",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}

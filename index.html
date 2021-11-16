@@ -1,358 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Home Page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Keith Sinclair</title>
+    <!-- Bootstrap CDN -->
     <link
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     />
+
+    <!-- My Style Sheet -->
     <link href="style.css" rel="stylesheet" />
+    <!-- Favicon -->
     <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
   </head>
   <body>
-<!-- Navigation -->
-<nav class="navbar navbar-expand-md navbar-dark bg-dark ">
-    <div class="container d-flex flex-row">
-      <a href="index.html" class="navbar-brand"
-        ><img src="images/logo.svg"
-      /></a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarResponsive"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav">
-          <li class="nav-item dropdown active">
-            <a
-              href="#"
-              class="nav-link dropdown-toggle"
-              data-toggle="dropdown"
-              data-target="dropdown_target"
-              >Games</a
-            >
-            <div class="dropdown-menu" aria-labelledby="dropdown_target">
-              <a href="xboxgames.html" class="dropdown-item">
-                <i class="fab fa-xbox smallerIcon"></i>XBox One</a
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-dark navbarHeader">
+      <div class="container d-flex flex-row">
+        <a href="index.html"
+          ><img src="images/logo.svg" class="img-fluid myLogo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse bgnavbar " id="navbarResponsive">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link"><i class="fas fa-home"></i>Home</a>
+            </li>
+            <li class="nav-item active">
+              <a href="#" class="nav-link"
+                ><i class="fas fa-info-circle"></i>About Me</a
               >
-              <div class="dropdown-divider"></div>
-              <a href="psgames.html" class="dropdown-item"
-                ><i class="fab fa-playstation smallerIcon"></i>PS4</a
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"><i class="fas fa-cog"></i>My Projects</a>
+            </li>
+            
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link"
+                ><i class="fas fa-user-plus"></i>Register</a
               >
-              <div class="dropdown-divider"></div>
-              <a href="nintendogames.html" class="dropdown-item"
-                ><i class="fab fa-nintendo-switch smallerIcon"></i>Nintendo</a
-              >
-            </div>
-          </li>
-          <li class="nav-item">
-            <a href="index.html#theTeam" class="nav-link">The Team</a>
-          </li>
-
-          <li class="nav-item ">
-            <a href="aboutus.html" class="nav-link">About Us</a>
-          </li>
-          <li class="nav-item ">
-            <a href="login.html" class="nav-link"
-              >Login <i class="far fa-user"></i
-            ></a>
-          </li>
-          <li class="nav-item ">
-            <a href="#" class="nav-link"
-              >Search <i class="fas fa-search"></i
-            ></a>
-          </li>
-        </ul>
-        <div class="cartBtn ml-auto">
-          <a href="#" class="nav-item nav-link p-2" id="modalBtn"
-            >Cart <i class="fas fa-shopping-cart"></i
-          ></a>
+            </li>
+            <li class="nav-item ">
+              <a href="#" class="nav-link"
+                ><i class="fa fa-sign-in" aria-hidden="true"></i>Login </i>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
-  </nav>
-  <!-- End of Navigation -->
-
-    <!--- Image Slider  Carousel-->
-    <div
-      id="carouselExampleFade"
-      class="carousel slide carousel-fade padding"
-      data-ride="carousel"
-    >
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <a href="rage2.html"
-            ><img src="images/slider1.jpg" class="d-block w-100" alt="Slider1"
-          /></a>
-          <div class="carousel-caption d-none d-md-block carouselBtn">
-            <button
-              class="btn btn-lg btn-success btn-block"
-              onclick="location.href = 'rage2.html'"
-            >
-              More Info
-            </button>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <a href="dmc5.html"
-            ><img src="images/slider2.jpg" class="d-block w-100" alt="Slider2"
-          /></a>
-          <div class="carousel-caption d-none d-md-block carouselBtn">
-            <button
-              class="btn btn-lg btn-success btn-block"
-              onclick="location.href = 'dmc5.html'"
-            >
-              More Info
-            </button>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <a href="darksiders3.html"
-            ><img src="images/slider3.jpg" class="d-block w-100" alt="Slider3"
-          /></a>
-          <div class="carousel-caption d-none d-md-block carouselBtn">
-            <button
-              class="btn btn-lg btn-success btn-block"
-              onclick="location.href = 'darksiders3.html'"
-            >
-              More Info
-            </button>
-          </div>
-        </div>
-      </div>
-      <a
-        class="carousel-control-prev"
-        href="#carouselExampleFade"
-        role="button"
-        data-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a
-        class="carousel-control-next"
-        href="#carouselExampleFade"
-        role="button"
-        data-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
+    </nav>
+    <!-- End of Navigation -->
 
     <!--- Welcome Section -->
-
-    <div class="container-fluid padding">
+    
+    <div class="container-fluid padding mt-5 ">
       <div class="row welcome text-center">
-        <div class="col-12"><h1 class="display-4">Game Fanatics</h1></div>
+        <div class="col-12">
+          <h1 class="display-4">Full Stack Web Developer</h1>
+        </div>
         <hr />
         <div class="col-12">
-          <p class="lead">Welcome to this website all about gaming</p>
+          <p class="lead">Welcome to Keith Sinclair's Portfolio Site, here I showcase my skills that I have acquired throughout my <i>Web Development</i> journey</p>
         </div>
       </div>
     </div>
 
-    <!--- Three Column Section -->
-
-    <div class="container-fluid padding">
-      <div class="row text-center padding">
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <i class="fab fa-xbox"></i>
-          <h3>X Box One</h3>
-          <p>Jump in with all the latest titles</p>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <i class="fab fa-playstation"></i>
-          <h3>Playstation 4</h3>
-          <p>Everything PS4 and beyond</p>
-        </div>
-        <div class="col-sm-12 col-md-4">
-          <i class="fab fa-nintendo-switch"></i>
-          <h3>Nintendo Switch</h3>
-          <p>Switch things up with Nintendo</p>
-        </div>
-      </div>
-      <hr class="my-4" />
-    </div>
-
-    <!--- Fixed background -->
-    <figure>
-      <div class="fixed-wrap"><div id="fixed"></div></div>
-    </figure>
-
-    <!--- Meet the team -->
-
-    <div class="container-fluid padding" id="theTeam">
-      <div class="row welcome text-center">
-        <div class="col-12"><h1 class="display-4">Meet the Team</h1></div>
-        <hr />
-      </div>
-    </div>
-
-    <!--- Cards -->
-
-    <div class="container-fluid">
-      <div class="row padding">
-        <div class="col-md-4">
-          <div class="card">
-            <img src="images/poo.gif" alt="" class="card-img-top" />
-            <div class="card-body">
-              <h4 class="card-title">John Stool</h4>
-              <p class="card-text">
-                John is the sh!t, with over 20 years experience in the
-                business.He's your man for all stuff thats sh!t hot.
-              </p>
-              <a href="#" class="btn btn-outline-secondary">See Profile</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="images/panda.gif" alt="" class="card-img-top" />
-            <div class="card-body">
-              <h4 class="card-title">Zhen Zhen</h4>
-              <p class="card-text">
-                Zhen has 12 years experience in the Gaming Industry. She keeps
-                the order so this place isn't a zoo.
-              </p>
-              <a href="#" class="btn btn-outline-secondary">See Profile</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="images/chicken.gif" alt="" class="card-img-top" />
-            <div class="card-body">
-              <h4 class="card-title">Emelia Egghart</h4>
-              <p class="card-text">
-                Emelia has 15 years of experience in the Gaming Industry and is
-                always hatching new plans..
-              </p>
-              <a href="#" class="btn btn-outline-secondary">See Profile</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--- Connect -->
-
-    <div class="container-fluid padding">
-      <div class="row text-center padding">
-        <div class="col-12"><h2>Connect</h2></div>
-        <div class="col-12 social padding">
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-google-plus-g"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-youtube"></i></a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Shopping Cart Modal -->
-    <div id="simpleModal" class="myModal">
-      <div class="myModal-content">
-        <div class="myModal-header">
-          <span class="closeBtn">&times</span>
-          <h2>Your Cart &nbsp<i class="fas fa-shopping-cart modalCart"></i></h2>
-        </div>
-        <div class="myModal-body">
-          <div><ul id="show-cart"></ul></div>
-          <div>You have <span id="count-cart"></span> items in your cart</div>          
-          <div>Sub Total for Cart R <span id="total-cart"></span></div>
-          <div>Total Cart R <span class="total-tax"></span> with Tax @ 15%</div>
-        </div>
-        </div>
-        <div class="myModal-footer">
-          <button class="btn btn-dark" id="clear-cart">
-            Clear Cart &nbsp<i class="far fa-times-circle"></i></button
-          >&nbsp<button class="btn btn-dark" id="checkOutCart">
-            Check Out &nbsp<i class="far fa-check-square"></i>
-          </button>
-        </div>
-      </div>      
-    </div>
-    <!-- End of Shopping Cart Modal -->
-
-    <!-- CheckOut Modal -->
-    <div id="checkOut-Modal"  class="myModal">
-      <div class="myModal-content">
-        <div class="myModal-header">
-          <span class="closeBtncheckout">&times</span>
-          <h2>Check Out &nbsp<i class="far fa-check-square modalCart"></i></h2>
-        </div>
-        <div class="myModalCheckout"> 
-          <div><h4>Vouchers</h4>
-              <form action="">
-                <input type="radio" onclick="voucherDiscount(this.value)" name="voucher" value="10.00"> &nbsp I have a R10-00 Voucher<br>
-                <input type="radio" onclick="voucherDiscount(this.value)" name="voucher" value="20.00"> &nbsp I have a R20-00 Voucher<br>
-                <input type="radio" onclick="voucherDiscount(this.value)" name="voucher" value="50.00"> &nbsp I have a R50-00 Voucher<br>
-              </form>          
-          </div><br>
-          <div><h4>Delivery or Collect</h4>
-            <form action="">
-              <input type="radio" id="shippingRadio" onclick="shippingOption(this.value)" name="collect" value = "0.00"> &nbsp I will Collect [No Charge]<br>
-              <input type="radio" id="shippingRadio" onclick="shippingOption(this.value)" name="collect" value = "20.00" > &nbsp Please Deliver [R 20-00]<br>
-              <input type="radio" id="shippingRadio" onclick="shippingOption(this.value)" name="collect" value = "50.00"> &nbspExpress Delivery [R 50-00]<br>
-            </form>          
-        </div>        
-        </div>
-        <div class="myModal-body">
-          <div>Total Cart with Tax @ 15%  R <span class="total-tax"></span> - Voucher R <input id="discountVoucher" disabled>+ Delivery R <input id="deliveryCharge" disabled> = Grand Total R <span id="grandTotal"></span>&nbsp &nbsp<button id="finalizeBtn" class="btn btn-dark" onclick="generateOrder()">
-              Finalize Order &nbsp<i class="far fa-check-square"></i>
-            </button> </div>
-        </div>
-      </div>      
-    </div>
-     <!-- End of CheckOut Modal -->
     <!--- Footer -->
     <footer>
       <div class="container-fluid">
         <div class="row text-center">
-          <div class="col-md-4">
-            <img src="images/logo.svg" alt="" />
+          <div class="col-md-4">           
+            <hr class="light" />  
+            <h5>Contact Me</h5>
             <hr class="light" />
-            <p>082-123-4567</p>
-            <p>support@sinclairgames.com</p>
-            <p>100 Gaming Alley</p>
-            <p>Vice City, Game State, 0000</p>
+            <p>keith@keithsinclair.co.za</p>
+            <p>North Riding</p>
+            <p>Johannesburg 2001</p>
           </div>
           <div class="col-md-4">
             <hr class="light" />
-            <h5>Our Hours</h5>
+            <h5>My Hours</h5>
             <hr class="light" />
-            <p>Monday: 8am - 5pm</p>
-            <p>Saturday: 8am - 2pm</p>
-            <p>Sunday & Public Holidays: Closed</p>
+            <p>Monday: Closed</p>
+            <p>Tuesday to Friday: 9am - 5pm</p>
+            <p>Saturday, Sunday & Holidays: Closed</p>
           </div>
           <div class="col-md-4">
             <hr class="light" />
-            <h5>Service Areas</h5>
+            <h5>Services</h5>
             <hr class="light" />
-            <p>Vice City, 00000</p>
-            <p>San Andreas, 0000</p>
-            <p>Los Santos 0000</p>
-            <p>Liberty City, 0000</p>
+            <p>Web Development</p>
+            <p>Hosting for Websites</p>
+            <p>Email Services</p>            
           </div>
           <div class="col-12">
             <hr class="light-100" />
-            <h5>&copy; sinclairgames.com</h5>
+            <h5>&copy;<!-- Copyright Year Footer -->
+            <script type="text/javascript">var year = new Date(); document.write(year.getFullYear());</script> keithsinclair.co.za</h5>
           </div>
         </div>
       </div>
     </footer>
 
+<!--- End of Footer -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="https://use.fontawesome.com/releases/v5.6.0/js/all.js"></script>
-    <!-- Shopping cart JavaScript File -->
-    <script src="js/cart.js"></script>
+    <!-- FontAwesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/a9f59815a3.js"
+      crossorigin="anonymous"
+    ></script>
+   
   </body>
 </html>

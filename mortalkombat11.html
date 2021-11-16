@@ -3,11 +3,15 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Home Page</title>
+    <title>Mortal Kombat 11</title>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.6.0/js/all.js"></script>
     <link href="style.css" rel="stylesheet" />
     <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
   </head>
@@ -78,185 +82,92 @@
   </nav>
   <!-- End of Navigation -->
 
-    <!--- Image Slider  Carousel-->
-    <div
-      id="carouselExampleFade"
-      class="carousel slide carousel-fade padding"
-      data-ride="carousel"
-    >
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <a href="rage2.html"
-            ><img src="images/slider1.jpg" class="d-block w-100" alt="Slider1"
-          /></a>
-          <div class="carousel-caption d-none d-md-block carouselBtn">
-            <button
-              class="btn btn-lg btn-success btn-block"
-              onclick="location.href = 'rage2.html'"
-            >
-              More Info
-            </button>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <a href="dmc5.html"
-            ><img src="images/slider2.jpg" class="d-block w-100" alt="Slider2"
-          /></a>
-          <div class="carousel-caption d-none d-md-block carouselBtn">
-            <button
-              class="btn btn-lg btn-success btn-block"
-              onclick="location.href = 'dmc5.html'"
-            >
-              More Info
-            </button>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <a href="darksiders3.html"
-            ><img src="images/slider3.jpg" class="d-block w-100" alt="Slider3"
-          /></a>
-          <div class="carousel-caption d-none d-md-block carouselBtn">
-            <button
-              class="btn btn-lg btn-success btn-block"
-              onclick="location.href = 'darksiders3.html'"
-            >
-              More Info
-            </button>
-          </div>
-        </div>
-      </div>
-      <a
-        class="carousel-control-prev"
-        href="#carouselExampleFade"
-        role="button"
-        data-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a
-        class="carousel-control-next"
-        href="#carouselExampleFade"
-        role="button"
-        data-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-
-    <!--- Welcome Section -->
-
-    <div class="container-fluid padding">
-      <div class="row welcome text-center">
-        <div class="col-12"><h1 class="display-4">Game Fanatics</h1></div>
-        <hr />
-        <div class="col-12">
-          <p class="lead">Welcome to this website all about gaming</p>
-        </div>
-      </div>
-    </div>
-
-    <!--- Three Column Section -->
-
-    <div class="container-fluid padding">
-      <div class="row text-center padding">
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <i class="fab fa-xbox"></i>
-          <h3>X Box One</h3>
-          <p>Jump in with all the latest titles</p>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <i class="fab fa-playstation"></i>
-          <h3>Playstation 4</h3>
-          <p>Everything PS4 and beyond</p>
-        </div>
-        <div class="col-sm-12 col-md-4">
-          <i class="fab fa-nintendo-switch"></i>
-          <h3>Nintendo Switch</h3>
-          <p>Switch things up with Nintendo</p>
-        </div>
-      </div>
-      <hr class="my-4" />
-    </div>
-
-    <!--- Fixed background -->
-    <figure>
-      <div class="fixed-wrap"><div id="fixed"></div></div>
-    </figure>
-
-    <!--- Meet the team -->
-
-    <div class="container-fluid padding" id="theTeam">
-      <div class="row welcome text-center">
-        <div class="col-12"><h1 class="display-4">Meet the Team</h1></div>
-        <hr />
-      </div>
-    </div>
-
-    <!--- Cards -->
-
+    <!-- Game Details -->
     <div class="container-fluid">
-      <div class="row padding">
-        <div class="col-md-4">
-          <div class="card">
-            <img src="images/poo.gif" alt="" class="card-img-top" />
-            <div class="card-body">
-              <h4 class="card-title">John Stool</h4>
-              <p class="card-text">
-                John is the sh!t, with over 20 years experience in the
-                business.He's your man for all stuff thats sh!t hot.
-              </p>
-              <a href="#" class="btn btn-outline-secondary">See Profile</a>
-            </div>
-          </div>
+      <div class="row  align-items-center justify-content-around">
+        <div class="col-md-5">
+          <img
+            src="images/MortalKombat11.jpg"
+            alt="Anthem"
+            class="img-responsive rounded mainGame"
+          />
+          <button
+            class="btn btn-primary btn-lg btn-dark overlay add-to-cart"
+            data-name="Mortal Kombat 11"
+            data-price="999.00"
+            onclick="alertItem();"
+          >
+            Price R999-00 <br />
+            Add to Cart
+          </button>
         </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="images/panda.gif" alt="" class="card-img-top" />
-            <div class="card-body">
-              <h4 class="card-title">Zhen Zhen</h4>
-              <p class="card-text">
-                Zhen has 12 years experience in the Gaming Industry. She keeps
-                the order so this place isn't a zoo.
-              </p>
-              <a href="#" class="btn btn-outline-secondary">See Profile</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card">
-            <img src="images/chicken.gif" alt="" class="card-img-top" />
-            <div class="card-body">
-              <h4 class="card-title">Emelia Egghart</h4>
-              <p class="card-text">
-                Emelia has 15 years of experience in the Gaming Industry and is
-                always hatching new plans..
-              </p>
-              <a href="#" class="btn btn-outline-secondary">See Profile</a>
-            </div>
-          </div>
+        <div class="col-md-5">
+          <table class="table table-hover">
+            <thead>
+              <tr class="bg-success">
+                <th>Publisher</th>
+                <th>Genre</th>
+              </tr>
+            </thead>
+            <tr>
+              <td>Electronic Arts</td>
+              <td>Action RPG</td>
+            </tr>
+            <tr class="bg-success">
+              <th>Release Date</th>
+              <th>Developer</th>
+            </tr>
+            <tr>
+              <td>22 February 2019</td>
+              <td>Bioware</td>
+            </tr>
+          </table>
+
+          <br /><br />
+          <!-- Game Links & Trailers Table -->
+          <table class="table table-dark">
+            <thead>
+              <tr>
+                <th>Game Links & Trailers</th>
+              </tr>
+            </thead>
+            <tr>
+              <td>
+                Mortal Kombat 11 Website &nbsp
+                <a
+                  href="https://www.ea.com/en-gb/games/anthem"
+                  class="badge badge-pill badge-success"
+                  >Click Here</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Mortal Kombat 11 Trailer &nbsp
+                <a
+                  href="https://www.ea.com/en-gb/games/anthem"
+                  class="badge badge-pill badge-success"
+                  >Click Here</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Mortal Kombat 11 Gameplay &nbsp
+                <a
+                  href="https://www.ea.com/en-gb/games/anthem"
+                  class="badge badge-pill badge-success"
+                  >Click Here</a
+                >
+              </td>
+            </tr>
+          </table>
         </div>
       </div>
     </div>
 
-    <!--- Connect -->
-
-    <div class="container-fluid padding">
-      <div class="row text-center padding">
-        <div class="col-12"><h2>Connect</h2></div>
-        <div class="col-12 social padding">
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-google-plus-g"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-youtube"></i></a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Shopping Cart Modal -->
-    <div id="simpleModal" class="myModal">
+   <!-- Shopping Cart Modal -->
+   <div id="simpleModal" class="myModal">
       <div class="myModal-content">
         <div class="myModal-header">
           <span class="closeBtn">&times</span>
@@ -311,6 +222,7 @@
       </div>      
     </div>
      <!-- End of CheckOut Modal -->
+
     <!--- Footer -->
     <footer>
       <div class="container-fluid">
@@ -347,11 +259,6 @@
         </div>
       </div>
     </footer>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="https://use.fontawesome.com/releases/v5.6.0/js/all.js"></script>
     <!-- Shopping cart JavaScript File -->
     <script src="js/cart.js"></script>
   </body>
